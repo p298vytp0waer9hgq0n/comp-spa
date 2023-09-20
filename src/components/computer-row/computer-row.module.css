@@ -1,0 +1,32 @@
+.row {
+  display: grid;
+  grid-template-columns: 71px 40px repeat(8, 1fr) 40px;
+  align-items: center;
+  height: 60px;
+  text-align: left;
+  border: 1px solid #d7deea;
+  border-top: none;
+  overflow: hidden;
+}
+
+.check {
+  margin-left: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--grey-accent-color);
+}
+
+.active {
+  background-color: green;
+}
+
+.common {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

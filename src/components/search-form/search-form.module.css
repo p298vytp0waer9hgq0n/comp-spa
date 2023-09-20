@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+  width: 45%;
+}
+
+.filter-form {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  border: 2px solid var(--grey-accent-color);
+  border-radius: 6px;
+  transition: all 0.4s;
+}
+
+.filter-form:has(:focus-visible) {
+  border: 2px solid var(--default-blue-color);
+}
+
+.filter-input {
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+  border: none;
+  background: none;
+}
+
+.filter-input:focus {
+  outline: none;
+  border: none;
+}
+
+.options {
+  position: absolute;
+  top: 120%;
+  right: 0px;
+  width: 60%;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  background: var(--default-background-color);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.dropdown-container {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-button {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--default-background-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+  z-index: 2;
+}
+
+.dropdown-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.dropdown-option:hover {
+  background-color: var(--light-blue-color);
+}
+
+.tagsearch {
+  margin: 5px;
+}
+
+.buttons {
+  width: 100%;
+  margin-top: 15px;
+  text-align: right;
+}
+
+.submit {
+  margin-inline: 5px;
+  padding: 9px 12px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--default-blue-color);
+}
+
+.reset {
+  padding: 9px 12px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  background-color: var(--grey-accent-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}

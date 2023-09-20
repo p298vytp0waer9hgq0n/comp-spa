@@ -1,0 +1,32 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  margin-block: 22px;
+  padding-inline: 22px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.table-head {
+  display: grid;
+  grid-template-columns: 111px repeat(8, 1fr) 40px;
+  align-items: center;
+  height: 60px;
+  border: 1px solid #d7deea;
+  border-bottom: 2px solid #d7deea;
+  background-color: #eeeeee;
+  text-align: left;
+}
+
+.check {
+  margin-left: 15px;
+}
+
+.table-head__text {
+  font-weight: 600;
+}
+
+.last-column {
+  justify-self: flex-end;
+}

@@ -1,0 +1,51 @@
+.container {
+  margin-left: 30px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.page {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  border: none;
+  background: none;
+  color: var(--primary-text-color);
+}
+
+.page_active {
+  background-color: var(--default-blue-color);
+  color: #fff;
+}
+
+.navbuttons {
+  margin-left: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.navbutton {
+  margin-right: 6px;
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  border: none;
+  background: none;
+  stroke: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.navbutton:disabled {
+  stroke: var(--disabled-grey-color);
+  cursor: auto;
+}

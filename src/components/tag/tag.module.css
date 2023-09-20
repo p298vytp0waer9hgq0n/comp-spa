@@ -1,0 +1,13 @@
+.tag {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 95%;
+  margin: 5px 2px;
+  padding: 3px 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: rgba(20, 205, 25, 0.2);
+  color: green;
+  border-radius: 4px;
+}
